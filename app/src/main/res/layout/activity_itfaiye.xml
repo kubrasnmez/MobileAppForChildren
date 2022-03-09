@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECD619"
+    tools:context=".itfaiye">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_acildurum"></include>
+
+    <ImageView
+        android:id="@+id/itfaiyedetay"
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/itfaiyearaba" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/itfaiyenumara"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/itfaiyenumara"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/itfaiyeci"
+        android:layout_width="170dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itfaiyenumara"
+        app:srcCompat="@drawable/itfaiyeci" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="280dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homekirmizi" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/seskirmizi" />
+
+        <ImageView
+            android:id="@+id/iconitfaiye"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/iconitfaiye" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

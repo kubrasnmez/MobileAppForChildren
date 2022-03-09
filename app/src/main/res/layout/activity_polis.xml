@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECD619"
+    tools:context=".polis">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_acildurum"></include>
+    <ImageView
+        android:id="@+id/polisdetay"
+        android:layout_width="230dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/polisaraba" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/polisnumara"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/polisnumara"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/polis"
+        android:layout_width="180dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/polisnumara"
+        app:srcCompat="@drawable/polis" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="280dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homemavi" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ses" />
+        <ImageView
+            android:id="@+id/iconpolis"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/iconpolis" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

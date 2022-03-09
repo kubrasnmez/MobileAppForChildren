@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6fffc"
+    tools:context=".domates">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_yazsebze">
+    </include>
+
+    <ImageView
+        android:id="@+id/domates"
+        android:layout_width="160dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/domatesdetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsolkirmizi" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsagkirmizi" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="200dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homesari" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sessari" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutdomatestext"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ffca18"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol">
+
+        <TextView
+            android:id="@+id/domatestext"
+            android:layout_width="92dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#fffa98"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:text="DOMATES"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

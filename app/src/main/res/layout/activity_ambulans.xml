@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECD619"
+    tools:context=".ambulans">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_acildurum"></include>
+
+    <ImageView
+        android:id="@+id/ambulansdetay"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ambulansaraba" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ambulansnumara"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ambulansnumara"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/doktor"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ambulansnumara"
+        app:srcCompat="@drawable/doktor" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="280dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homemor" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sesmor" />
+        <ImageView
+            android:id="@+id/iconambulans"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="11dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/iconambulans" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

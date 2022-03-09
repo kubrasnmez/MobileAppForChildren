@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2bb"
+    tools:context=".akciger">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_icorganlar">
+    </include>
+    <RelativeLayout
+        android:id="@+id/relativeLayoutakciger"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/border_koyupembe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/akcigerdetay"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/akcigerdetay"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsiyahsol" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsiyahsag" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homepembe" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sespembe" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutakcigertext"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="34dp"
+        android:background="#fc4eff"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol">
+
+        <TextView
+            android:id="@+id/akcigertext"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#fecdff"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:text="AKCİĞER"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

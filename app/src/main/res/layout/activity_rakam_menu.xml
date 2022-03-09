@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fec3ff"
+    tools:context=".rakam_menu">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_rakamlar">
+    </include>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="299dp"
+        android:layout_height="395dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sifir"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="sifir"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/sifir"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bir"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:onClick="bir"
+            android:src="@drawable/bir"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iki"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="iki"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/iki"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uc"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="uc"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/uc"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dort"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="dort"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/dort"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bes"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="bes"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/bes"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/alti"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="alti"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/alti"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/yedi"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:onClick="yedi"
+            android:src="@drawable/yedi"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sekiz"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="sekiz"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/sekiz"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dokuz"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_margin="3dp"
+            android:onClick="dokuz"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#5f5f5f"
+            android:src="@drawable/dokuz"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="198dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homesari" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="ses"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sessari" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

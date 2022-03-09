@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9ffcd"
+    tools:context=".sebze_menu">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sebzeler">
+    </include>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/kissebze"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="90dp"
+        android:onClick="kissebze"
+        android:src="@drawable/kissebze"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/yazsebze"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="25dp"
+        android:onClick="yazsebze"
+        android:src="@drawable/yazsebze"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kissebze" />
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="199dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="home"
+            app:layout_row="0"
+            app:layout_column="0"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/homekirmizi" />
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_row="0"
+            app:layout_column="1"
+            android:onClick="ses"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/seskirmizi" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

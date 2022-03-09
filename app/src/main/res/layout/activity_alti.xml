@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7ff9f"
+    tools:context=".alti">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_rakamlar">
+    </include>
+    <ImageView
+        android:id="@+id/kurdele"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kurdele_alti" />
+
+    <ImageView
+        android:id="@+id/altidetay"
+        android:layout_width="105dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout7"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol"
+        app:srcCompat="@drawable/altidetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsolkirmizi" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsagkirmizi" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout7"
+        android:layout_width="200dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homekirmizi" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/seskirmizi" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

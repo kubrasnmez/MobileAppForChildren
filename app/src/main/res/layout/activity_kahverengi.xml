@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a86f4e"
+    tools:context=".kahverengi">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_renkler">
+    </include>
+    <RelativeLayout
+        android:id="@+id/relativeLayoutkahve"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/border_kahve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/renk_kahve"
+            android:layout_width="276dp"
+            android:layout_height="276dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/renk_kahve"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsolkahve" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsagkahverengi" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="199dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homekahverenk" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/seskahverenk" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutkahvetext"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="#652d0d"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol">
+
+        <TextView
+            android:id="@+id/kahvetext"
+            android:layout_width="116dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#e2ff89"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:text="KAHVERENGİ"
+            android:textAlignment="center"
+            android:textColor="#7d4f35"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

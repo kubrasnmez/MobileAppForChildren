@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#feb2ff"
+    tools:context=".yedi">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_rakamlar">
+    </include>
+    <ImageView
+        android:id="@+id/yeditavsan"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tavsan_yedi" />
+
+    <ImageView
+        android:id="@+id/yedidetay"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout18"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol"
+        app:srcCompat="@drawable/yedidetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsolsari" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsagsari" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout18"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hometuruncu" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sesturuncu" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc39a"
+    tools:context=".kismeyve">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_kismeyve">
+</include>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/armut"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="armut"
+            android:src="@drawable/armutmenu"
+            app:civ_border_width="3dp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/greyfurt"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="greyfurt"
+            android:src="@drawable/greyfurtmenu"
+            app:civ_border_width="3dp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kivi"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="kivi"
+            android:src="@drawable/kivimenu"
+            app:civ_border_width="3dp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ayva"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="ayva"
+            android:src="@drawable/ayvamenu"
+            app:civ_border_width="3dp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nar"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="nar"
+            android:src="@drawable/narmenu"
+            app:civ_border_width="3dp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/portakal"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="portakal"
+            android:src="@drawable/portakalmenu"
+            app:civ_border_width="3dp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/elma"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="elma"
+            android:src="@drawable/elmamenu"
+            app:civ_border_width="3dp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mandalina"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="mandalina"
+            android:src="@drawable/mandalinamenu"
+            app:civ_border_width="3dp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/muz"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_margin="5dp"
+            android:onClick="muz"
+            android:src="@drawable/muzmenu"
+            app:civ_border_width="3dp"
+            app:layout_column="2"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="207dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sesyesil" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

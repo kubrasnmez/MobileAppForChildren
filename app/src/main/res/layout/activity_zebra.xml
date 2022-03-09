@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3fffc"
+    tools:context=".zebra">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_hayvan">
+    </include>
+    <ImageView
+        android:id="@+id/zebradetay"
+        android:layout_width="280dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zebradetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconfilleft" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconfilsag" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homesari" />
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sessari" />
+        <ImageView
+            android:id="@+id/iconzebra"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="10dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/iconzebra" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutzebratext"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        android:background="#ff8db1"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol">
+
+        <TextView
+            android:id="@+id/zebratext"
+            android:layout_width="88dp"
+            android:layout_height="42dp"
+            android:layout_margin="4dp"
+            android:background="#ffd3e1"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:text="ZEBRA"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

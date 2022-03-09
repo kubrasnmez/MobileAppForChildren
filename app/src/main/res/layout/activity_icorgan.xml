@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdf74"
+    tools:context=".icorgan">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_icorganlar">
+    </include>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout5"
+        android:layout_width="250dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kalp"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            android:onClick="kalp"
+            android:src="@drawable/kalpmenu"
+            app:civ_border_color="#00fff5"
+            app:civ_border_width="4dp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/akciger"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            android:onClick="akciger"
+            android:src="@drawable/akcigermenu"
+            app:civ_border_color="#ff1b25"
+            app:civ_border_width="4dp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bobrek"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            android:onClick="bobrek"
+            android:src="@drawable/bobrekmenu"
+            app:civ_border_color="#ff7fa8"
+            app:civ_border_width="4dp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/beyin"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            android:onClick="beyin"
+            android:src="@drawable/beyinmenu"
+            app:civ_border_color="#00ff48"
+            app:civ_border_width="4dp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/kalinbagirsak"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            android:onClick="kalinbagirsak"
+            android:src="@drawable/kbagirsakmenu"
+            app:civ_border_color="#00b0ff"
+            app:civ_border_width="4dp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mide"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            android:onClick="mide"
+            android:src="@drawable/midemenu"
+            app:civ_border_color="#e127b1"
+            app:civ_border_width="4dp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+    </androidx.gridlayout.widget.GridLayout>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="198dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homemor" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="ses"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sesmor" />
+</androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

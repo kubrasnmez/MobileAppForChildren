@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3ff8d"
+    tools:context=".dort">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_rakamlar">
+    </include>
+    <ImageView
+        android:id="@+id/ugurbocegi"
+        android:layout_width="290dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ugurbocegi_dort" />
+
+    <ImageView
+        android:id="@+id/dortdetay"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout13"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol"
+        app:srcCompat="@drawable/dortdetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsiyahsol" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsiyahsag" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout13"
+        android:layout_width="200dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homepembe" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sespembe" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kubrasonmez.birlikteogreniyoruz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BirlikteOgreniyoruz">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".itfaiye" />
+        <activity android:name=".polis" />
+        <activity android:name=".hayvan_menu" />
+        <activity android:name=".acildurum_menu" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".giysi_menu" />
+        <activity android:name=".yazgiysi" />
+        <activity android:name=".sekil_menu" />
+        <activity android:name=".yazsebze" />
+        <activity android:name=".sebze_menu" />
+        <activity android:name=".renk_menu" />
+        <activity android:name=".rakam_menu" />
+        <activity android:name=".organ_menu" />
+        <activity android:name=".yazmeyve" />
+        <activity android:name=".meyve_menu" />
+        <activity android:name=".kissebze" />
+        <activity android:name=".icorgan" />
+        <activity android:name=".kisgiysi" />
+        <activity android:name=".kismeyve" />
+        <activity android:name=".zurafa" />
+        <activity android:name=".zebra" />
+        <activity android:name=".yesil" />
+        <activity android:name=".yedi" />
+        <activity android:name=".uzum" />
+        <activity android:name=".ucgen" />
+        <activity android:name=".uc" />
+        <activity android:name=".turuncu" />
+        <activity android:name=".tisort" />
+        <activity android:name=".turp" />
+        <activity android:name=".terlik" />
+        <activity android:name=".sort" />
+        <activity android:name=".siyah" />
+        <activity android:name=".sincap" />
+        <activity android:name=".sifir" />
+        <activity android:name=".semsiye" />
+        <activity android:name=".seftali" />
+        <activity android:name=".sogan" />
+        <activity android:name=".sekiz" />
+        <activity android:name=".salatalik" />
+        <activity android:name=".sapkayaz" />
+        <activity android:name=".sapka" />
+        <activity android:name=".sarimsak" />
+        <activity android:name=".sari" />
+        <activity android:name=".nar" />
+        <activity android:name=".patates" />
+        <activity android:name=".patlican" />
+        <activity android:name=".pembe" />
+        <activity android:name=".pirasa" />
+        <activity android:name=".portakal" />
+        <activity android:name=".mont" />
+        <activity android:name=".misir" />
+        <activity android:name=".mide" />
+        <activity android:name=".muz" />
+        <activity android:name=".mor" />
+        <activity android:name=".mayo" />
+        <activity android:name=".mavi" />
+        <activity android:name=".mantar" />
+        <activity android:name=".mandalina" />
+        <activity android:name=".kulak" />
+        <activity android:name=".kurbaga" />
+        <activity android:name=".kivi" />
+        <activity android:name=".kirmizi" />
+        <activity android:name=".kiraz" />
+        <activity android:name=".kedi" />
+        <activity android:name=".karnabahar" />
+        <activity android:name=".kare" />
+        <activity android:name=".kazak" />
+        <activity android:name=".karpuz" />
+        <activity android:name=".kavun" />
+        <activity android:name=".kayisi" />
+        <activity android:name=".kahverengi" />
+        <activity android:name=".ispanak" />
+        <activity android:name=".kalp" />
+        <activity android:name=".kalinbagirsak" />
+        <activity android:name=".inek" />
+        <activity android:name=".iki" />
+        <activity android:name=".havuc" />
+        <activity android:name=".greyfurt" />
+        <activity android:name=".gri" />
+        <activity android:name=".horoz" />
+        <activity android:name=".hirka" />
+        <activity android:name=".gomlek" />
+        <activity android:name=".gozluk" />
+        <activity android:name=".goz" />
+        <activity android:name=".fasulye" />
+        <activity android:name=".fil" />
+        <activity android:name=".elma" />
+        <activity android:name=".erik" />
+        <activity android:name=".etek" />
+        <activity android:name=".eldiven" />
+        <activity android:name=".elbise" />
+        <activity android:name=".domates" />
+        <activity android:name=".dort" />
+        <activity android:name=".duyuorgan" />
+        <activity android:name=".dolmabiber" />
+        <activity android:name=".dokuz" />
+        <activity android:name=".dikdortgen" />
+        <activity android:name=".deri" />
+        <activity android:name=".civciv" />
+        <activity android:name=".daire" />
+        <activity android:name=".corap" />
+        <activity android:name=".cilek" />
+        <activity android:name=".burun" />
+        <activity android:name=".brokoli" />
+        <activity android:name=".bot" />
+        <activity android:name=".bogurtlen" />
+        <activity android:name=".bobrek" />
+        <activity android:name=".bir" />
+        <activity android:name=".bezelye" />
+        <activity android:name=".beyin" />
+        <activity android:name=".beyaz" />
+        <activity android:name=".bes" />
+        <activity android:name=".baykus" />
+        <activity android:name=".bamya" />
+        <activity android:name=".ayva" />
+        <activity android:name=".atki" />
+        <activity android:name=".at" />
+        <activity android:name=".aslan" />
+        <activity android:name=".armut" />
+        <activity android:name=".anarenkler" />
+        <activity android:name=".alti" />
+        <activity android:name=".akciger" />
+        <activity android:name=".agiz" />
+        <activity android:name=".ambulans" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1fffc"
+    tools:context=".yazsebze">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_yazsebze"></include>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bezelye"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:onClick="bezelye"
+            android:layout_margin="5dp"
+            android:src="@drawable/bezelyemenu"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/misir"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="misir"
+            android:src="@drawable/misirmenu"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dolmabiber"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="dolmabiber"
+            android:src="@drawable/dolmabibermenu"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/salatalik"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="salatalik"
+            android:src="@drawable/salatalikmenu"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bamya"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="bamya"
+            android:src="@drawable/bamyamenu"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fasulye"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="fasulye"
+            android:src="@drawable/fasulyemenu"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patlican"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="patlican"
+            android:src="@drawable/patlicanmenu"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patates"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="patates"
+            android:src="@drawable/patatesmenu"
+            app:layout_column="1"
+            app:layout_row="2" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dometes"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="5dp"
+            android:onClick="domates"
+            android:src="@drawable/domatesmenu"
+            app:layout_column="2"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="199dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homesari" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="ses"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sessari" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe9a1"
+    tools:context=".sekiz">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_rakamlar">
+    </include>
+    <ImageView
+        android:id="@+id/sekizbalon"
+        android:layout_width="330dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/balon_sekiz" />
+
+    <ImageView
+        android:id="@+id/sekizdetay"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout15"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol"
+        app:srcCompat="@drawable/sekizdetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconpembesol" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconpembesag" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout15"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homepembe" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sespembe" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

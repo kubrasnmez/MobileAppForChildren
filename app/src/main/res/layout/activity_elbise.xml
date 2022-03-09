@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6ad1ff"
+    tools:context=".elbise">
+    tools:context=".elbise">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_yazgiysi">
+    </include>
+    <ImageView
+        android:id="@+id/elbisedetay"
+        android:layout_width="215dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elbisedetay" />
+
+    <ImageView
+        android:id="@+id/iconsol"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsolsari" />
+
+    <ImageView
+        android:id="@+id/iconsag"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/iconsagsari" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="199dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hometuruncu" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/sesturuncu" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutelbisetext"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ff9650"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toStartOf="@+id/iconsag"
+        app:layout_constraintStart_toEndOf="@+id/iconsol">
+
+        <TextView
+            android:id="@+id/elbisetext"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#ffcead"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:text="ELBİSE"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECD619"
+    tools:context=".acildurum_menu">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_acildurum" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/acildurumgrid"
+        android:layout_width="375dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutmenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ambulansaraba"
+            android:layout_height="125dp"
+            android:layout_margin="8dp"
+            android:onClick="ambulansaraba"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ambulansaraba" />
+        <ImageView
+            android:id="@+id/polisaraba"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_margin="8dp"
+            android:onClick="polisaraba"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/polisaraba" />
+        <ImageView
+            android:id="@+id/itfaiyearaba"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_margin="8dp"
+            android:onClick="itfaiyearaba"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/itfaiyearaba" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="199dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homekirmizi" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:onClick="ses"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/seskirmizi" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

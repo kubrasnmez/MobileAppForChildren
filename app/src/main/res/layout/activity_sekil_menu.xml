@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2f9ff"
+    tools:context=".sekil_menu">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sekiller">
+    </include>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout4"
+        android:layout_width="333dp"
+        android:layout_height="333dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/dikdortgen"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:onClick="dikdortgen"
+            android:layout_margin="3dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/dikdortgen" />
+
+        <ImageView
+            android:id="@+id/ucgen"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="3dp"
+            android:onClick="ucgen"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ucgen" />
+
+        <ImageView
+            android:id="@+id/daire"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="3dp"
+            android:onClick="daire"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/daire" />
+
+        <ImageView
+            android:id="@+id/kare"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="3dp"
+            android:onClick="kare"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/kare" />
+    </androidx.gridlayout.widget.GridLayout>
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayoutmenu"
+        android:layout_width="214dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_margin="13dp"
+            android:onClick="home"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/homekirmizi" />
+
+        <ImageView
+            android:id="@+id/ses"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_margin="13dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:onClick="ses"
+            app:srcCompat="@drawable/seskirmizi" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

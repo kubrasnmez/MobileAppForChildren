@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b5fbc9"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/giysi"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="giysi"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/giysi" />
+
+        <ImageView
+            android:id="@+id/hayvan"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="hayvan"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/hayvanlar" />
+
+        <ImageView
+            android:id="@+id/meyve"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="meyve"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/meyve" />
+
+        <ImageView
+            android:id="@+id/organ"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:onClick="organ"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/organlar" />
+
+        <ImageView
+            android:id="@+id/rakam"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:onClick="rakam"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rakamlar" />
+
+        <ImageView
+            android:id="@+id/renk"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="renk"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/renkler" />
+
+        <ImageView
+            android:id="@+id/sebze"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="sebze"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/sebze" />
+
+        <ImageView
+            android:id="@+id/sekil"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:onClick="sekil"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/sekiller" />
+
+        <ImageView
+            android:id="@+id/acildurum"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="acildurum"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/acil" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
