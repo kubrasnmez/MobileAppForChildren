@@ -48,7 +48,7 @@ Application for Preschool Children
 
 </p>
 
- <h6> * designs and pictures are mine.</h6> 
+ <h6> * I completely prepared the designs and pictures.</h6> 
 
 
 
