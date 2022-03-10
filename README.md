@@ -48,7 +48,7 @@ Application for Preschool Children
 
 </p>
 
-
+<h7 float="right">* designs and pictures are mine.</h7>
 
 
 
