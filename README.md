@@ -22,6 +22,9 @@ Application for Preschool Children
   <img width="230px" src="https://user-images.githubusercontent.com/59183453/157743081-be55d526-f693-4c3d-bc46-d8dcbcebeaaf.jpg">
     <img width="230px" src="https://user-images.githubusercontent.com/59183453/157745819-d771ade6-a105-4221-ad23-c0002d099312.jpg">
   <img width="230px" src="https://user-images.githubusercontent.com/59183453/157746117-663aa3b7-566c-459f-b2fa-9a93766ec185.jpg">
+    <img width="230px" src="https://user-images.githubusercontent.com/59183453/157746742-bb5acbbf-d240-402b-bb5a-f9acdddb587b.jpg">
+    <img width="230px" src="https://user-images.githubusercontent.com/59183453/157746771-cbb00c10-a7b0-4ffd-99b2-b51e26fd4767.jpg">
+
 
   
 </p>
@@ -33,27 +36,13 @@ Application for Preschool Children
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157742542-05328d7d-37ea-4455-a98b-99ee139f3764.png">
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157741380-e21f5eec-0f77-4ae1-ba62-cfe93be89799.png">
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157741409-57f60c78-9b39-45c9-b0e8-3f2d66cba6a3.png">
-  
-</p>
-
-<br/><br/>
-
-<p>
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157741867-898f6d73-8708-41b0-9a4c-f974b6d9c63b.png">
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157741932-6089c8aa-2c94-4078-9127-552a8fda6d47.png">
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157741976-30f669e6-84be-4cac-beea-563940038a8e.png">
   <img width="235px" src="https://user-images.githubusercontent.com/59183453/157742130-eb8b0619-3d1f-4172-bebd-3c4cfb67e3da.png">
   
 </p>
-<br/><br/>
 
-<p>
-  <img width="230px" src="https://user-images.githubusercontent.com/59183453/157742762-fa4f7e3c-6c0d-467b-8d9e-167bf3c85880.jpg">
-  <img width="230px" src="https://user-images.githubusercontent.com/59183453/157742750-e7d3b962-2fed-4765-806b-2e278577c4ab.jpg">
-  <img width="230px" src="https://user-images.githubusercontent.com/59183453/157742732-5e9b89df-eef0-4a8b-a3d9-436086b52b66.jpg">
-  <img width="230px" src="https://user-images.githubusercontent.com/59183453/157743081-be55d526-f693-4c3d-bc46-d8dcbcebeaaf.jpg">
-  
-</p>
 
 
 
